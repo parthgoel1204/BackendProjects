@@ -1,0 +1,186 @@
+[
+  {
+    "id": 12,
+    "name": "Ishaan",
+    "department": "Engineering",
+    "salary": 94000,
+    "experience": 6,
+    "projects": [
+      { "name": "NeuralVision", "budget": 500000, "completed": true },
+      { "name": "DataBridge", "budget": 220000, "completed": false }
+    ],
+    "skills": ["JavaScript", "TypeScript", "React", "Node.js"],
+    "location": { "city": "Bangalore", "country": "India" }
+  },
+  {
+    "id": 4,
+    "name": "Riya",
+    "department": "Engineering",
+    "salary": 70000,
+    "experience": 3,
+    "projects": [
+      { "name": "MicroPulse", "budget": 180000, "completed": true }
+    ],
+    "skills": ["C++", "Next.js", "SQL"],
+    "location": { "city": "Hyderabad", "country": "India" }
+  },
+  {
+    "id": 23,
+    "name": "Amit",
+    "department": "Marketing",
+    "salary": 52000,
+    "experience": 2,
+    "projects": [
+      { "name": "MarketGrow", "budget": 90000, "completed": true },
+      { "name": "BrandX", "budget": 60000, "completed": false }
+    ],
+    "skills": ["SEO", "Analytics"],
+    "location": { "city": "Delhi", "country": "India" }
+  },
+  {
+    "id": 31,
+    "name": "Neha",
+    "department": "Marketing",
+    "salary": 60000,
+    "experience": 3,
+    "projects": [
+      { "name": "LeadBoost", "budget": 200000, "completed": true }
+    ],
+    "skills": ["Google Ads", "Figma", "Copywriting"],
+    "location": { "city": "Mumbai", "country": "India" }
+  },
+  {
+    "id": 17,
+    "name": "Saanvi",
+    "department": "Engineering",
+    "salary": 85000,
+    "experience": 5,
+    "projects": [
+      { "name": "AutoTest", "budget": 240000, "completed": true },
+      { "name": "VisionAI", "budget": 400000, "completed": true }
+    ],
+    "skills": ["Python", "TensorFlow", "Docker"],
+    "location": { "city": "Chennai", "country": "India" }
+  },
+  {
+    "id": 9,
+    "name": "Raj",
+    "department": "HR",
+    "salary": 50000,
+    "experience": 4,
+    "projects": [],
+    "skills": ["Recruitment", "Compliance", "Negotiation"],
+    "location": { "city": "Pune", "country": "India" }
+  },
+  {
+    "id": 45,
+    "name": "Karan",
+    "department": "Engineering",
+    "salary": 42000,
+    "experience": 1,
+    "projects": [
+      { "name": "CodeRunner", "budget": 100000, "completed": false }
+    ],
+    "skills": ["JavaScript", "CSS", "HTML"],
+    "location": { "city": "Bangalore", "country": "India" }
+  },
+  {
+    "id": 28,
+    "name": "Meera",
+    "department": "Design",
+    "salary": 56000,
+    "experience": 4,
+    "projects": [
+      { "name": "RebrandX", "budget": 150000, "completed": true },
+      { "name": "UIRevamp", "budget": 70000, "completed": false }
+    ],
+    "skills": ["Illustrator", "Photoshop", "UI/UX"],
+    "location": { "city": "Gurgaon", "country": "India" }
+  },
+  {
+    "id": 51,
+    "name": "Kabir",
+    "department": "Finance",
+    "salary": 88000,
+    "experience": 8,
+    "projects": [
+      { "name": "FinTrack", "budget": 500000, "completed": true },
+      { "name": "AuditEase", "budget": 350000, "completed": true }
+    ],
+    "skills": ["Excel", "Accounting", "Data Analysis"],
+    "location": { "city": "Delhi", "country": "India" }
+  },
+  {
+    "id": 39,
+    "name": "Tara",
+    "department": "Design",
+    "salary": 64000,
+    "experience": 6,
+    "projects": [
+      { "name": "BrandCanvas", "budget": 280000, "completed": true }
+    ],
+    "skills": ["Figma", "Prototyping", "Motion Design"],
+    "location": { "city": "Pune", "country": "India" }
+  },
+  {
+    "id": 7,
+    "name": "Aarav",
+    "department": "Engineering",
+    "salary": 77000,
+    "experience": 4,
+    "projects": [
+      { "name": "Streamify", "budget": 200000, "completed": true },
+      { "name": "DataDock", "budget": 120000, "completed": false }
+    ],
+    "skills": ["Node.js", "AWS", "PostgreSQL"],
+    "location": { "city": "Bangalore", "country": "India" }
+  },
+  {
+    "id": 63,
+    "name": "Pooja",
+    "department": "Customer Support",
+    "salary": 47000,
+    "experience": 5,
+    "projects": [],
+    "skills": ["Communication", "CRM Tools"],
+    "location": { "city": "Chandigarh", "country": "India" }
+  },
+  {
+    "id": 74,
+    "name": "Harsh",
+    "department": "Finance",
+    "salary": 53000,
+    "experience": 2,
+    "projects": [
+      { "name": "BudgetFlow", "budget": 160000, "completed": true }
+    ],
+    "skills": ["Taxation", "Ledger Management"],
+    "location": { "city": "Ahmedabad", "country": "India" }
+  },
+  {
+    "id": 83,
+    "name": "Sara",
+    "department": "Marketing",
+    "salary": 67000,
+    "experience": 6,
+    "projects": [
+      { "name": "Campaign360", "budget": 310000, "completed": true },
+      { "name": "InsightX", "budget": 250000, "completed": true }
+    ],
+    "skills": ["Brand Strategy", "Market Analysis"],
+    "location": { "city": "Delhi", "country": "India" }
+  },
+  {
+    "id": 96,
+    "name": "Dev",
+    "department": "Engineering",
+    "salary": 91000,
+    "experience": 7,
+    "projects": [
+      { "name": "AutoDeploy", "budget": 350000, "completed": true },
+      { "name": "CoreAPI", "budget": 250000, "completed": true }
+    ],
+    "skills": ["Go", "Kubernetes", "CI/CD"],
+    "location": { "city": "Chennai", "country": "India" }
+  }
+]
