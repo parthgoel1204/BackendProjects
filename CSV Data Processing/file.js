@@ -32,3 +32,31 @@ for(let i =1; i<rows.length; i++ ){
 // console.log(transactions);
 // console.log(transactions.length);
 
+for (let i = 0; i < transactions.length; i++) {
+    transactions[i].Amount = parseInt(transactions[i].Amount, 10);
+    transactions[i].Date = new Date(transactions[i].Date);
+}
+
+// console.log(transactions);
+// console.log(typeof transactions.Amount); 
+// console.log(transactions.Date instanceof Date); 
+
+transactions.sort((a, b) => a.Date - b.Date);
+
+// console.log(transactions);
+// console.log(transactions[0].Date);
+// console.log(transactions[transactions.length - 1].Date);
+
+const groupingTransactions = {};
+transactions.forEach( (transaction) => {
+    const name  = transaction.AccountHolder;
+
+    if(!groupingTransactions[name]){
+        groupingTransactions[name] = [];
+    }
+
+    groupingTransactions[name].push(transaction);
+});
+
+console.log(Object.keys(groupingTransactions));
+console.log(groupingTransactions["Arjun Mehta"]);
