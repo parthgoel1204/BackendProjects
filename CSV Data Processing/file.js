@@ -58,5 +58,29 @@ transactions.forEach( (transaction) => {
     groupingTransactions[name].push(transaction);
 });
 
-console.log(Object.keys(groupingTransactions));
-console.log(groupingTransactions["Arjun Mehta"]);
+// console.log(Object.keys(groupingTransactions));
+// console.log(groupingTransactions["Arjun Mehta"]);
+
+const userSummary = {};
+for(const key in groupingTransactions){
+    let totalCredit = groupingTransactions[key].reduce((acc,curr) => {
+        if(curr.Type === "Credit"){
+            acc += curr.Amount;
+        }
+        return acc;
+    },0);
+    let totalDebit = groupingTransactions[key].reduce((acc,curr) => {
+        if(curr.Type === "Debit"){
+            acc += curr.Amount;
+        }
+        return acc;
+    },0);
+    
+    userSummary[key] = {
+        TotalCredit: totalCredit,
+        TotalDebit: totalDebit
+    };
+}
+
+// console.log(userSummary);
+// console.log(userSummary["Arjun Mehta"]);
