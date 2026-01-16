@@ -75,12 +75,49 @@ for(const key in groupingTransactions){
         }
         return acc;
     },0);
+
+    const largestTransaction = groupingTransactions[key].reduce((max, curr) => {
+        if (curr.Amount > max.Amount) {
+            max = curr;
+        }
+        return max;
+    });
+
+    const salaryTransactions = groupingTransactions[key]
+        .filter(txn => txn.Remarks.includes("Salary"))
+        .map(txn => txn.TransactionID);
     
     userSummary[key] = {
         TotalCredit: totalCredit,
-        TotalDebit: totalDebit
+        TotalDebit: totalDebit,
+        LargestTransaction : largestTransaction.Amount,
+        SalaryTransactions : salaryTransactions
     };
 }
 
 // console.log(userSummary);
 // console.log(userSummary["Arjun Mehta"]);
+
+// console.log(userSummary["Arjun Mehta"].LargestTransaction);
+// console.log(userSummary["Arjun Mehta"].SalaryTransactions);
+
+const finalSummary = [];
+
+for (const user in userSummary) {
+    finalSummary.push({
+        AccountHolder: user,
+        TotalCredit: userSummary[user].TotalCredit,
+        TotalDebit: userSummary[user].TotalDebit,
+        LargestTransaction: userSummary[user].LargestTransaction,
+        SalaryTransactions: userSummary[user].SalaryTransactions.join("|")
+    });
+}
+const headers = Object.keys(finalSummary[0]).join(",");
+
+const rowsCsv = finalSummary.map(obj =>
+    Object.values(obj).join(",")
+);
+
+const csvContent = [headers, ...rowsCsv].join("\n");
+
+fs.writeFileSync("bank_summary.csv", csvContent);
